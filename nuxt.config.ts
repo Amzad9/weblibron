@@ -16,5 +16,9 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'node-server'
   },
+  routeRules: {
+    // prerender index route by default
+    '/': { prerender: true },
+  },
   ssr: false
 })
